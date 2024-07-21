@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AdminService {
-  adminWebApi: any = "https://localhost:7247/api/Admin";
+  // adminWebApi: any = "https://localhost:7247/api/Admin";
+  adminWebApi: any = "vehicleservicestatusapi.azurewebsites.net";
   constructor(private http: HttpClient) { }
 
   getAdmin() {
