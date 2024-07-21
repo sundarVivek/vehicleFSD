@@ -1,0 +1,104 @@
+.btn-circle {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+}
+
+.container {
+    // margin-left: 263px;
+     margin-top: 20px;
+    display: inline-flex;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    /* 100% of viewport width */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logoutbtn {
+    margin-top: 30px;
+    margin-left: 1300px;
+}
+
+.navbar {
+    background-color: #eb3941 !important;
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 6px #6c757d !important;
+}
+
+.card1 {
+    background-color: #000;
+}
+
+.card2 {
+    background-color: #000;
+}
+
+.card3 {
+    background-color: #000;
+}
+.card4 {
+    background-color: #000;
+
+}
+
+.btnDrpdown {
+    font-size: 12px;
+    margin-left: 182px;
+    background-color: black;
+    border-color: #212121 !important;
+}
+
+#count {
+    color: white;
+    text-align: center;
+    width: 43px;
+    height: 37px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+#text {
+    color: green;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 30px;
+    position: absolute;
+}
+#myChart{
+    padding-top: 69px;
+    margin-left: 121px;
+    height: 300px !important;
+    width: 550px !important;
+}
+.dropdown{
+    margin-left: 200px;
+    padding-top: 35px;
+}
+
+.dropdownSelect{
+    width: 120px;
+    background-color: #000;
+    color: green;
+}
+.label{
+    color: white;
+    padding-right: 20px;
+}

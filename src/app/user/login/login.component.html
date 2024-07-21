@@ -1,0 +1,39 @@
+
+  <body>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+              <img src="assets\images\yamaha-logo-3860.png"
+                class="img-fluid" alt="Phone image">
+            </div>
+            
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 form">
+              <div class="notification">
+                <p id="para">Enter your vehicle number in this format : TN 01 CB 1234. </p>
+                <p></p>
+              </div>
+              <!-- <h1 class="text">WELCOME </h1> -->
+              <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="form1Example13" class="form-control form-control-lg" placeholder="Vehicle No" formControlName="VehilceNo" />
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="form1Example13" class="form-control form-control-lg" placeholder="Owner name" formControlName="customer_name" />
+                </div>
+                <!-- Submit button -->
+                <span class="error-message" *ngIf="submitted&&loginForm.invalid">Please provide valid credentials </span>
+                <div class="submitbtn">
+                    <button type="submit" class="gradient-custom-2 loginBtn" [disabled]="this.loading">LOGIN</button>
+                </div>
+                <div *ngIf="errorMessage">
+                  <h3 class="danger">{{errorMessage}}</h3>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  </body>

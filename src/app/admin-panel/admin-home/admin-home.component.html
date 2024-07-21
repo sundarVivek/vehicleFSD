@@ -1,0 +1,91 @@
+<body>
+  <app-header></app-header>
+  <app-sidebar></app-sidebar>
+  <div class="mainContainer">
+    <div class="container">
+      <div class="card card1 ">
+        <div class="card-body">
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm dropdown-toggle btnDrpdown" data-bs-toggle="dropdown"
+              aria-expanded="false">Overall
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="filterDataByToday()">Today</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisWeek()">Week</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisMonth()">Month</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisYear()">Year</a></li>
+            </ul>
+          </div>
+          <h3 id="text">Ready for service</h3>
+          <h1 id="count">{{readyForService}}</h1>
+        </div>
+      </div>
+      <div class="card card2">
+        <div class="card-body">
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm dropdown-toggle btnDrpdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Overall
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="filterDataByToday()">Today</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisWeek()">Week</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisMonth()">Month</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisYear()">Year</a></li>
+            </ul>
+          </div>
+          <h3 id="text">Service in progress</h3>
+          <h1 id="count">{{pendingService}}</h1>
+        </div>
+      </div>
+      <div class="card card3">
+        <div class="card-body">
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm dropdown-toggle btnDrpdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Overall
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="filterDataByToday()">Day</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisWeek()">Week</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisMonth()">Month</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisYear()">Year</a></li>
+            </ul>
+          </div>
+          <h3 id="text">Ready for delivery</h3>
+          <h1 id="count">{{readyForDelivery}}</h1>
+        </div>
+      </div>
+      <div class="card card4">
+        <div class="card-body">
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger btn-sm dropdown-toggle btnDrpdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+             Overall
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="filterDataByToday()">Day</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisWeek()">Week</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisMonth()">Month</a></li>
+              <li><a class="dropdown-item" (click)="filterDataByThisYear()">Year</a></li>
+            </ul>
+          </div>
+          <h3 id="text">Total services</h3>
+          <h1 id="count">{{completedService}}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="chartContainer">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div class="dropdown">
+      <label class="label">Filter</label>
+      <select class="dropdownSelect" (change)="updateChart()">
+        <option value="Day">Day</option>
+        <option value="Month">Month</option>
+        <option value="Year">Year</option>
+      </select>
+    </div>
+  </div>
+</body>

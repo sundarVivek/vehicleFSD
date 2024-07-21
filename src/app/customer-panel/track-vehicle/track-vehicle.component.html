@@ -1,0 +1,38 @@
+
+<body>
+  <app-header></app-header>
+<!-- Section: Timeline -->
+<section class="py-5 container">
+  <ul class="timeline-with-icons">
+    <h3 class="text gradient-custom-2">READY FOR SERVICE</h3>
+    <li class="timeline-item mb-5">
+      <span class="timeline-icon">
+        <i class="fas fa-rocket text-primary fa-sm fa-fw"> 
+        </i>
+      </span>
+      <div class="div">
+        <img [ngClass]="{ 'blink': isReadyForServiceBlinking }" class="image" src="assets\images\pngwing.com.png" />
+      </div>
+    </li>
+    <h3 class="text gradient-custom-2">SERVICE IN PROGRESS</h3>
+    <li class="timeline-item mb-5">
+      <span class="timeline-icon">
+        <i class="fas fa-hand-holding-usd text-primary fa-sm fa-fw"></i>
+      </span>
+      <div class="div">
+        <img [ngClass]="{ 'blink': isServiceInProgressBlinking }" class="image" src="assets\images\pngwing.com.png" />
+      </div>
+    </li>
+    <h3 class="text gradient-custom-2">READY FOR DELIVERY</h3>
+    <li class="timeline-item mb-5">
+      <span class="timeline-icon">
+        <i class="fas fa-users text-primary fa-sm fa-fw"></i>
+      </span>
+      <div class="div">
+        <img [ngClass]="{ 'blink': isReadyForDeliveryBlinking }" class="image" src="assets\images\pngwing.com.png" />
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- Section: Timeline -->
+</body>

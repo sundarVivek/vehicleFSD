@@ -1,0 +1,37 @@
+.navbar{
+    background-color: rgb(30, 23, 23) !important;
+  width: -webkit-fill-available;
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 1000; 
+  background: linear-gradient(to right,  #4E342E, #0d0c0c,#730606, #dc1217,);
+}
+
+.container-fluid{
+  display: flex;
+  justify-content: space-around;
+}
+.username{
+  margin-left: 449px;
+  margin-top: 20px;
+  color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .navbar{
+      background-color: rgb(30, 23, 23) !important;
+      position: fixed;
+    width: -webkit-fill-available; position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff; /* Set your desired text color */
+    padding: 10px; /* Set your desired padding */
+    z-index: 1000; /* Set a higher z-index to ensure the header appears above other elements */
+    background: linear-gradient(to right,  #4E342E, #0d0c0c,#730606, #dc1217,);
+    height: 100px;
+  }
+   }

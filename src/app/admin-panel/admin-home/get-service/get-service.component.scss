@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    padding-top: 170px;
+}
+.loginBtn {
+    width: 430px;
+    color: white;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 69px;
+}
+.container{
+    margin: 50px 0px 0px 573px;
+    box-shadow: 1px -1px 14px grey;
+    width: fit-content;
+    padding: 50px 50px 50px 50px;
+    background: linear-gradient(to right, #4E342E, #0d0c0c);
+}
+
+.col-md-12{
+    padding: 20px 0px 20px 0px;
+}
+
+#para{
+    color: red;
+}
