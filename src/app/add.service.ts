@@ -9,6 +9,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class AddService {
   id: any;
   serviceWebApiUrl: any = "https://localhost:7247/api/service";
+  
 
   constructor(private http: HttpClient,
     private route: Router) { }
