@@ -27,7 +27,7 @@ export class AdminLoginComponent {
       username: ['', Validators.required],
       password: ['', Validators.required],
     });
-    console.log(this.adminService.getAdmin());
+ this.adminService.getAdmin().subscribe((res=>{console.log("azure",res)}));
   }
   onSubmit() {
     this.submitted=true;

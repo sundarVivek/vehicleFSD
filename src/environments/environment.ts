@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'vehiclefsdapidbserver.database.windows.net'
+    apiUrl: 'vehiclefsdapidbserver.database.windows.net/api'
   };
   
