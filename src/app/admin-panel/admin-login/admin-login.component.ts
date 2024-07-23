@@ -16,6 +16,7 @@ export class AdminLoginComponent {
   submitted=false;
   adminId:any;
   loading:boolean=false;
+
   constructor(private route: Router,
     private adminService: AdminService,
      private fb: FormBuilder,
@@ -25,7 +26,8 @@ export class AdminLoginComponent {
     this.adminLogin = this.fb.group({
       username: ['', Validators.required],
       password: ['', Validators.required],
-    })
+    });
+    console.log(this.adminService.getAdmin());
   }
   onSubmit() {
     this.submitted=true;
